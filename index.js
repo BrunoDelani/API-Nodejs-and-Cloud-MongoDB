@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
+
 const server = express()
 
 // ler JSON / middlewares
@@ -12,11 +13,16 @@ server.use(
 
 server.use(express.json())
 
-// rota inicial
+// rotas
 server.get('/', (req, res) => {
 
     res.json({message: "Rota home funcionando!"})
 })
+
+// rotas da api
+const personRoutes = require('./routes/personRoutes')
+server.use('/person', personRoutes)
+
 
 // estabelecendo conexão com o bando de dados
 const DB_USER = process.env.DB_USER
