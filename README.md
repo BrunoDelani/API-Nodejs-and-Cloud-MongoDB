@@ -1,11 +1,11 @@
-# SimpleAPI
-API com Node, Nodemon e  Mongoose
+# Simple API
+API with Node, Nodemon and Mongoose
 
-# Dependencias
+# Dependencies
 npm install express nodemon mongoose dotenv
 
 # Script
-Adicionado start": "nodemon ./index.js localhost 3000"
+Add start": "nodemon ./index.js localhost 3000"
  
- # Banco de Dados
-Estabelecendo conexão com o Cloud MongoDB
+# Database
+Cloud MongoDB
